@@ -13,7 +13,7 @@
         <properties>
 		<sonar.host.url>http://54.245.22.214:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>akhil</sonar.password> 
+		<sonar.password>Akhil</sonar.password> 
 
 	</properties>
 	<dependencies>

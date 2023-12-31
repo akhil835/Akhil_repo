@@ -11,10 +11,12 @@
 
 	<name>Akhil</name>
         <properties>
-		<sonar.host.url>http://34.219.144.235:9000/</sonar.host.url>
+		<jdk.version>11</jdk.version>
+		<sonar.host.url>http://35.90.8.105:9000</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>akhil</sonar.password> 
-
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<dependencies>
 		<dependency>

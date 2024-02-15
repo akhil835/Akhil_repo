@@ -10,13 +10,19 @@
 	<packaging>war</packaging>
 
 	<name>Akhil</name>
-        <properties>
-		<jdk.version>11</jdk.version>
-		<sonar.host.url>http://35.91.85.100:9000</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>Akhil@123</sonar.password> 
-	</properties>
+         <properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+http://35.166.104.124:8080/
+</sonar.host.url>
+        <sonar.login> squ_7c49ec1a93b478f084a4a8431fa5cbb6272161c5</sonar.login>
+</properties>
 	<dependencies>
+		 <dependency>
+ <groupId>org.sonarsource.scanner.maven</groupId>
+ <artifactId>sonar-maven-plugin</artifactId>
+ <version>3.9.0.2155</version>
+</dependency>
 		<dependency>
 			<groupId>com.sparkjava</groupId>
 			<artifactId>spark-core</artifactId>

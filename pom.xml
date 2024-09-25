@@ -8,16 +8,14 @@
 	<artifactId>sparkjava-hello-world</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-
-	<name>Akhil</name>
-         <properties>
+<properties>
 <!-- Optional URL to server. Default value is http://localhost:9000 -->
 <sonar.host.url>
 http://52.38.114.17:9000/
 </sonar.host.url>
         <sonar.login>squ_f4cf4ae61e5205ee1f155fbf980fd2a2dd0ddd9b</sonar.login>
 </properties>
-	<dependencies>
+<dependencies>
 		 <dependency>
  <groupId>org.sonarsource.scanner.maven</groupId>
  <artifactId>sonar-maven-plugin</artifactId>

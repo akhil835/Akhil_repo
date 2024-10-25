@@ -9,7 +9,7 @@
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>Akhil</name>
+    <name>DevOps</name>
 
     <properties>
         <!-- Optional URL to server. Default value is http://localhost:9000 -->

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <mirrors>
         <mirror>
-          <id>nexus</id>
+          <id>sivakumar</id>
           <name>Nexus</name>
-          <url>https://mynexus/repository/</url>
+          <url>http://43.204.100.0:8081/repository/sivakumar/</url>
           <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>   

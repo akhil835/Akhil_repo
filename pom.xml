@@ -3,14 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <mirrors>
-        <mirror>
-          <id>sivakumar</id>
-          <name>Nexus</name>
-          <url>http://43.204.100.0:8081/repository/sivakumar/</url>
-          <mirrorOf>*</mirrorOf>
-        </mirror>
-    </mirrors>   
+    
 
     <groupId>sparkjava-hello-world</groupId>
     <artifactId>sparkjava-hello-world</artifactId>
@@ -20,7 +13,6 @@
     <name>DevOps</name>
 
     <properties>
-        <!-- Optional URL to server. Default value is http://localhost:9000 -->
         <sonar.host.url>http://54.227.49.73:9000/</sonar.host.url>
         <sonar.login>squ_1fd6e727477d6709986b00b22b868cdb875bd6b8</sonar.login>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -88,6 +80,36 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+
+            <!-- JFrog Artifactory Maven Plugin for deploying artifacts and publishing build info -->
+            <plugin>
+                <groupId>org.jfrog.buildinfo</groupId>
+                <artifactId>artifactory-maven-plugin</artifactId>
+                <version>2.3.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>publish</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- Artifactory URL -->
+                    <url>http://13.201.0.14:8081</url>
+                    <!-- Credentials for Artifactory -->
+                    <username>admin</username>
+                    <password>Admin@123</password>
+                    <!-- Enable artifact deployment and build info publishing -->
+                    <deployArtifacts>true</deployArtifacts>
+                    <publishBuildInfo>true</publishBuildInfo>
+                    <!-- Repository where artifacts will be deployed -->
+                    <repository>
+                        <key>libs-release-local</key>
+                        <snapshots>true</snapshots>
+                    </repository>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 </project>
